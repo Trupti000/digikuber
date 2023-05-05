@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const legerSchema = new mongoose.Schema({
     total_income: {
-        type: String,
+        type: Number,
        default:0
     },
     total_expence: {
-        type: Date,
+        type:Number ,
         default:0
     },
    

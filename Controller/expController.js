@@ -1,7 +1,7 @@
 const Expence = require("../model/Expence");
 
 
-// get element Br Id
+// get element By Id
 exports.getExpenceById = async (req,res)=>{
     try {
         const data = await Expence.findById(req.params.id);
