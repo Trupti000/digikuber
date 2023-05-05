@@ -9,6 +9,8 @@ const route = require('express').Router()
 // all methods routes
 route.get('/',getExpence)
 
+route.get('/byid/:id',getExpence)
+
 route.post('/',postExpence)
 
 route.put('/:id',putExpence)

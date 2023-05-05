@@ -1,5 +1,5 @@
 
-const { getleger, postleger, putleger, deleteleger } = require('../Controller/legerController')
+const { getleger, postleger, putleger, deleteleger, getLegerById } = require('../Controller/legerController')
 
 
 // router fun add
@@ -7,6 +7,9 @@ const route = require('express').Router()
 
 
 // all methods routes
+
+route.get('/byid/:id',getLegerById)
+
 route.get('/',getleger)
 
 route.post('/',postleger)
